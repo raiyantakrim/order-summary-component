@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+}
+body,
+.btn {
+  font-family: "Red Hat Display", sans-serif;
+}
+p:not(.sub-title),
+a,
+.btn {
+  font-size: 14px;
+}
+p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.center-both {
+  display: grid;
+  place-items: center;
+}
+.flex {
+  display: flex;
+
+  &.f-column {
+    flex-direction: column;
+  }
+  &.jc-center {
+    justify-content: center;
+  }
+  &.jc-space-evenly {
+    justify-content: space-evenly;
+  }
+  &.ai-center {
+    align-items: center;
+  }
+}

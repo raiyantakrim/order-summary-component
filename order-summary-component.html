@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container flex jc-center ai-center">
+      <div class="card">
+        <img
+          src="./images/illustration-hero.svg"
+          alt="Hero Image"
+          class="card__image"
+        />
+        <div class="card__body flex f-column jc-space-between">
+          <h2 class="card__heading title">Order Summary</h2>
+          <p class="card__text sub-title">
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+          <div class="pricing flex ai-center jc-space-evenly">
+            <img src="/images/icon-music.svg" alt="Music Icon" />
+            <div class="center-both">
+              <p class="title">Annual Plan</p>
+              <p class="sub-title">$59.99/year</p>
+            </div>
+            <div class="center-both" style="margin-left: auto">
+              <a href="#">Change</a>
+            </div>
+          </div>
+          <div class="cta">
+            <button type="submit" class="btn">Proceed to Payment</button>
+            <a href="#">Cancel Order</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.facebook.com/raiyan.takrim">Raiyan Takrim</a>.
+  </div>
+  </body>
+</html>

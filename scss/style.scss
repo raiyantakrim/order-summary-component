@@ -1,0 +1,100 @@
+
+@import "globals";
+@import "variables";
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+body {
+  background-color: $paleBlue;
+}
+
+.btn {
+  outline: none;
+  border: 0;
+  height: 2.5rem;
+  width: 100%;
+  display: block;
+  font-weight: 700;
+  margin-bottom: $margin * 2;
+  color: #fff;
+  cursor: pointer;
+  border-radius: $borderRadius;
+  background-color: $brightBlue;
+  box-shadow: 0 1rem 1rem $paleBlue;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.title {
+  color: $darkBlue;
+  font-weight: 900;
+}
+.sub-title {
+  color: $desaturatedBlue;
+}
+
+.container {
+  background-image: url(/images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+  height: 100vh;
+}
+.card {
+  max-width: 24rem;
+  background: #fff;
+  border-radius: $cardRadius;
+  text-align: center;
+  margin: $margin;
+
+  & .card__image {
+    height: auto;
+    max-width: 100%;
+    border-radius: $cardRadius $cardRadius 0 0;
+  }
+
+  & .card__body {
+    padding: 2em;
+    
+    .card__heading {
+      margin-bottom: $margin;
+    }
+  }
+
+  .cta {
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      color: $desaturatedBlue;
+
+      &:hover {
+        color: $darkBlue;
+      }
+    }
+  }
+}
+
+.pricing {
+  height: 5rem;
+  width: 100%;
+  padding: 0 1em;
+  margin: $margin 0;
+  background-color: $veryPaleBlue;
+  border-radius: $borderRadius;
+
+  a {
+    font-weight: 700;
+    color: $brightBlue;
+    display: block;
+    &:hover {
+      opacity: 0.8;
+      text-decoration: none;
+    }
+  }
+  img {
+    height: 42px;
+    margin-right: 1em;
+  }
+}
+
+@import "media-queries";
